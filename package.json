@@ -1,0 +1,23 @@
+{
+  "name": "react-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm install && cd ./client && npm install && cd ../ && concurrently \"nodemon server.js\" \"npm start --prefix client\"",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm start --prefix client\""
+  },
+  "keywords": [],
+  "author": "Ben Evans",
+  "license": "MIT",
+  "dependencies": {
+    "concurrent": "^0.3.2",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

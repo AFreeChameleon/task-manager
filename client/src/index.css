@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --primary-yellow: #FFBE22;
+  --secondary-yellow: #FFD164;
+  --light-grey: #bbbbbb;
+  --font-colour: #272727;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

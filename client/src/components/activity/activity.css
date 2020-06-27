@@ -1,0 +1,73 @@
+@media (max-width: 1050px) {
+    .title-text {
+        font-size: 20px;
+    }
+
+    .title-progress-container {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1051px) {
+    .title-text {
+        font-size: 36px;
+    }
+
+    .title-progress-container {
+        font-size: 16px;
+    }
+}
+
+.card {
+    min-width: 246px;
+    min-height: 364px;
+    width: 40%;
+    height: 80%;
+    margin: auto;
+    border: 1px solid #BBBBBB;
+    border-radius: 8px;
+    padding: 20px;
+    color: #272727;
+}
+
+.container {
+    height: 100%;
+}
+
+.title-container {
+    display: flex;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+.title-text {
+    font-weight: 600;
+    color: var(--font-colour);
+}
+
+.title-progress-container {
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 50px;
+    display: flex;
+    padding: 0 10px;
+    margin-left: 20px;
+}
+
+.title-progress-container.in-progress {
+    background-color: var(--secondary-yellow);
+}
+
+.title-progress-container.completed {
+    background-color: var(--primary-yellow);
+}
+
+.title-progress-container.not-started {
+    background-color: var(--light-grey);
+}
+
+.title-progress-container div {
+    height: fit-content;
+    display: flex;
+    align-self: center;
+}

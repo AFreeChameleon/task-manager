@@ -1,0 +1,83 @@
+@media (max-width: 1050px) {
+    .tasklist-item-row {
+        display: block;
+        /* justify-content: space-between; */
+    }
+
+    .tasklist-item {
+        font-size: 12px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .tasklist-item-title {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .tasklist-item-description {
+        max-width: 100%;
+    }
+
+    .tasklist-item-date {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1051px) {
+    .tasklist-item-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tasklist-item {
+        font-size: 14px;
+    }
+
+    .tasklist-item-title {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .tasklist-item-description {
+        max-width: 85%;
+    }
+
+    .tasklist-item-date {
+        min-width: 150px;
+        text-align: right;
+    }
+}
+
+.tasklist-item {
+    width: 100%;
+    flex-grow: 1;
+    min-height: 110px;
+    height: fit-content;
+}
+
+
+
+.tasklist-item-title {
+    height: fit-content;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.tasklist-item-date {
+    color: rgb(39, 39, 39, 0.8);
+    padding-right: 5px;
+}
+
+.tasklist-item-description {
+    padding-top: 5px;
+    text-align: left;
+    color: rgb(39, 39, 39, 0.8);
+}

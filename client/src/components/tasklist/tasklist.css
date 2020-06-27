@@ -1,0 +1,83 @@
+@media (max-width: 1050px) {
+    .tasklist-content {
+        grid-template-columns: 40px auto;
+    }
+
+    .tasklist-grid {
+        height: calc(100% - 100px);
+    }
+}
+
+@media (min-width: 1051px) {
+    .tasklist-content {
+        grid-template-columns: 50px auto;
+    }
+
+    .tasklist-grid {
+        height: calc(100% - 200px);
+    }
+}
+
+.tasklist-content {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.tasklist-grid {
+    overflow-y: auto;
+}
+
+.tasklist-grid::-webkit-scrollbar {
+    width: 5px;
+}
+
+.tasklist-grid::-webkit-scrollbar-thumb {
+    background-color: var(--light-grey);
+    border-radius: 3px;
+}
+
+.tasklist-item {
+    padding-top: 10px;
+}
+
+.tasklist-milestones>div {
+    min-height: 110px;
+    text-align: center;
+}
+
+.tasklist-milestone-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    margin: 13px auto 0 auto;
+}
+
+.tasklist-milestone-icon.icon-complete {
+    background-image: url('./img/tick-yellow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tasklist-milestone-icon.icon-incomplete {
+    background-image: url('./img/cross-grey.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tasklist-milestone-line {
+    height: calc(100% - 24px);
+    width: 5px;
+    margin: 0 auto;
+}
+
+.tasklist-milestone-line.line-complete {
+    background-color: var(--primary-yellow);
+}
+
+.tasklist-milestone-line.line-incomplete {
+    background-color: #e5e5e5;
+}
+
+.tasklist-content:last-child>.tasklist-milestone-container .tasklist-milestone-line {
+    display: none;
+}

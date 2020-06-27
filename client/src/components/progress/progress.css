@@ -1,0 +1,32 @@
+@media (max-width: 1050px) {
+    .progress-container {
+        padding-top: 5px;
+    }
+}
+
+@media (min-width: 1051px) {
+    .progress-container {
+        padding-top: 60px;
+    }
+}
+
+.progress-title {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.progress-bar-container {
+    display: flex;
+    padding-top: 15px;
+}
+
+.progress-bar-completed {
+    height: 16px;
+    background-color: var(--primary-yellow);
+}
+
+.progress-bar-incompleted {
+    height: 16px;
+    background-color: #e5e5e5;
+}
